@@ -1,0 +1,341 @@
+/* ===================================================================
+ * # background
+ *
+ * ------------------------------------------------------------------- */
+body{
+  background-image: url(../images/back.jpg);
+}
+.main{
+  font-size: 30px;
+}
+/* ===================================================================
+ * # topimage
+ *
+ * ------------------------------------------------------------------- */
+
+ .commonContent{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#kemlogo{
+    width: 50%;
+    height: auto;
+    padding: 1%;
+}
+#mode{
+    width:30%;
+    height: auto;
+    padding: 1%;
+}
+.homeicon{
+    text-align: center;
+    width: 10vw;
+    height: auto;
+    padding: 1%;
+}
+.homeicon img{
+  width: 60%;
+}
+
+/* ===================================================================
+ * # pagetop
+ *
+ * ------------------------------------------------------------------- */
+.top_images{
+    text-align: center;
+}
+.top2{
+    width: 90vw;
+    height: auto;
+}
+.select_sec {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+.select_sec.fixed{
+    background-color: rgb(250, 239, 229);
+    z-index: 100;
+}
+.select_sec #mode{
+  width: 40vw;
+  height: auto;
+  padding: 0 30%;
+}
+.select_sec #select{
+    width: 16vw;
+    height: auto;
+}
+a.anchorLink{
+  display: block;
+    padding-top: calc(20vw);
+    margin-top: calc(-1 * 20vw);
+}
+/* ===================================================================
+ * # contents
+ *
+ * ------------------------------------------------------------------- */
+ .titleBox{
+    display: flex;
+    padding: 2% 2% 0;
+ }
+ #motokazu{
+    width: 8vw;
+    height: auto;
+ }
+ #session_name{
+   font-size: 4vw;
+   font-family: 'Noto Serif JP', serif;
+ }
+.basic_info{
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#midashi{
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.section1{
+  background-color: rgba(242, 154, 118, 0.68);
+}
+.section2{
+  background-color: rgba(246, 246, 246, 1);
+}
+.section3{
+  background-color: rgba(175, 168, 118, 0.81);
+}
+.section4{
+  background-color: rgba(189, 189, 189, 1);
+}
+.section5{
+  background-color: rgba(48, 117, 148, 0.7);
+}
+#midashi td{
+    text-align: left;
+    border: solid 1px;
+    padding: 0px 5px;
+}
+#midashi tr .no1{
+    border-top: none;
+    border-bottom-color: rgba(0, 0, 0, 0.5);
+    border-bottom-width: 0.5vw;
+}
+#midashi tr .no2{
+  border-bottom: none;
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+#midashi tr .left{
+  width: 7vw;
+  border-left: none;
+  border-right-color: rgba(135, 62, 39, 0.7);
+  border-right-width: 1vw;
+}
+
+#midashi tr .right{
+  border-right: none;
+  border-left-color: rgba(135, 62, 39, 0.7);
+}
+
+.midashiname{
+    font-weight: bold;
+    font-size: 4vw;
+    font-family: 'Noto Serif JP', serif;
+    color: black;
+}
+.txtBox{
+    padding: 0px 5%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.work_txt{
+    padding: 0px 5% 5%;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: left;
+}
+.section-head{
+  text-align: center;
+}
+.slider-x{
+  /* 以下の設定は必須 */
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  display: flex;
+  align-items: center;
+  -webkit-overflow-scrolling: touch; /* スマホ対応のため必須 */
+  overflow-scrolling: touch; /* スマホ対応のため必須 */
+  height: auto;
+  width: 60%;
+  text-align: center;
+  margin: 3% auto 0%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.slider-x > img{
+  /* 以下の設定は必須 */
+  scroll-snap-align: center;
+  height: 100%;
+  width: 95%;
+  flex: none;
+}
+.main hr{
+  width: 95%;
+}
+
+/* ===================================================================
+ * # audio
+ *
+ * ------------------------------------------------------------------- */
+
+.lead{
+  text-align: center;
+  margin: 0 auto;
+}
+.bar{
+  text-align:center;
+}
+.input-range[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #c7c7c7;
+    height: 4px;
+    width: 60%;
+
+}
+  input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    background:gray;
+    height:20px;
+    width:20px;
+    border-radius:50%;
+  }
+
+  input[type=range]::-ms-tooltip{
+    display:none;
+  }
+  input[type=range]::-moz-range-track{
+    height:0;
+  }
+  input[type=range]::-moz-range-thumb{
+    background:gray;
+    height:20px;
+    width:20px;
+    border:none;
+    border-radius:50%;
+  }
+time{
+  font-size: 2vw;
+}
+.play{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.play button{
+    background: none;
+    border: solid 2px;
+    border-color: black;
+    color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    padding: 0;
+}
+
+#btn-play_jp .fa-play{
+    color: black;
+}
+
+#btn-play_jp .fa-pause{
+    color: black;
+}
+
+
+
+/* ===================================================================
+ * # accordion
+ *
+ * ------------------------------------------------------------------- */
+ details summary {
+    list-style: none;
+  cursor: pointer;
+  padding: 0% 20px 3%;
+  /*background: #e4e4e4;*/
+  color: #242323;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Noto Serif JP', serif;
+  }
+  /**
+   * Chrome用のデフォルト三角削除
+  **/
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+  /**
+   アコーディオンクローズ時のアイコン
+  **/
+  details summary::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f078';
+    margin-right: 20px;
+  }
+  /**
+   アコーディオンがオープン時のアイコン
+  **/
+  details[open] > summary::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f077';
+  }
+
+
+/* ===================================================================
+ * # toppage
+ *
+ * ------------------------------------------------------------------- */
+ .front_txt{
+   padding: 2% 5%;
+   font-size: 30px;
+   font-family: 'Noto Sans JP', sans-serif;
+ }
+ .select-form-container img{
+   width: 100%;
+   height: auto;
+ }
+ .select-form-container input{
+  width: 100%;
+  height: 100%;
+}
+#kigaru{
+  width: 70%;
+   float: left;
+ }
+ #fukaku{
+  width: 70%;
+  float: right;
+}
+
+footer {
+  position:static;
+  bottom: 0;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+}
+footer p {
+  display: inline-block;
+  font-family: serif;
+}
+footer p a {
+  color: inherit;
+  text-decoration: none;
+}
